@@ -1,6 +1,6 @@
 {
   "name": "@peterek/eslint-config-vue",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESLint configuration for Vue.js based projects",
   "keywords": [
     "eslint",
@@ -37,8 +37,8 @@
     "prettier": "^2.5.0"
   },
   "dependencies": {
-    "@peterek/eslint-config-base": "^2.0.0",
-    "@peterek/eslint-config-ts": "^2.0.0",
+    "@peterek/eslint-config-base": "^2.0.1",
+    "@peterek/eslint-config-ts": "^2.0.1",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-standard": "^6.1.0",
     "eslint-plugin-vue": "^7.20.0",

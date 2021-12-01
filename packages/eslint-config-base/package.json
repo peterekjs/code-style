@@ -1,6 +1,6 @@
 {
   "name": "@peterek/eslint-config-base",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Eslint configuration base to use prettier & standard configurations",
   "keywords": [
     "eslint",
