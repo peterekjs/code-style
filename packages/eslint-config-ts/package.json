@@ -1,0 +1,43 @@
+{
+  "name": "@peterek/eslint-config-ts",
+  "version": "2.0.0",
+  "description": "ESLint configuration for TypeScript based projects",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "standard",
+    "typescript"
+  ],
+  "author": {
+    "name": "Jiri Peterek",
+    "email": "jiri.peterek@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:peterekjs/code-style.git"
+  },
+  "bugs": {
+    "url": "https://github.com/peterekjs/code-style/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "sideEffects": false,
+  "main": "./index.js",
+  "peerDependencies": {
+    "eslint": "^7.0.0",
+    "prettier": "^2.5.0",
+    "typescript": ">=4.0.0 <4.5.0"
+  },
+  "dependencies": {
+    "@peterek/eslint-config-base": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0"
+  }
+}

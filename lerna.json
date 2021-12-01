@@ -1,0 +1,20 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "message": "chore(release): publish",
+      "registry": "https://registry.npmjs.org/"
+    }
+  },
+  "changelogPreset": {
+    "name": "conventionalcommits",
+    "issueUrlFormat": "https://github.com/peterekjs/code-style/issues/{{id}}"
+  },
+  "changelog": {
+    "cacheDir": ".changelog"
+  }
+}

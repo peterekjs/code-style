@@ -1,0 +1,85 @@
+{
+  "folders": [
+    {
+      "name": "✨ @peterek/code-style",
+      "path": "."
+    },
+    {
+      "name": "📦 @peterek/eslint-config-base",
+      "path": "packages/eslint-config-base"
+    },
+    {
+      "name": "📦 @peterek/eslint-config-js",
+      "path": "packages/eslint-config-js"
+    },
+    {
+      "name": "📦 @peterek/eslint-config-ts",
+      "path": "packages/eslint-config-ts"
+    },
+    {
+      "name": "📦 @peterek/eslint-config-vue",
+      "path": "packages/eslint-config-vue"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [{
+      "type": "npm",
+      "script": "bootstrap",
+      "problemMatcher": [],
+      "label": "bootstrap",
+      "detail": "Manually bootstrap all packages."
+    }, {
+      "type": "npm",
+      "script": "commit",
+      "problemMatcher": [],
+      "label": "commit",
+      "detail": "Run prompt to compose conventional commit."
+    }, {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "all: dev",
+      "detail": "Run development compilation over all packages in parallel."
+    }, {
+      "type": "npm",
+      "script": "link",
+      "problemMatcher": [],
+      "label": "all: link",
+      "detail": "Create symlinks between related packages."
+    }, {
+      "type": "npm",
+      "script": "bump",
+      "problemMatcher": [],
+      "label": "bump",
+      "detail": "Bump versions for all changed packages using conventional commits resolution."
+    }, {
+      "type": "npm",
+      "script": "bump:custom",
+      "problemMatcher": [],
+      "label": "bump:cusom",
+      "detail": "Bump versions for all changed packages using prompt to customize versioning."
+    }, {
+      "type": "npm",
+      "script": "release",
+      "problemMatcher": [],
+      "label": "release",
+      "detail": "Publish all packages with updated versions."
+    }, {
+      "type": "shell",
+      "command": "git remote prune origin && git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d",
+      "problemMatcher": [],
+      "label": "git: clean",
+      "detail": "Clean all merged branches."
+    }, {
+      "type": "shell",
+      "command": "git remote prune origi n && git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D",
+      "problemMatcher": [],
+      "label": "git: clean:force",
+      "detail": "Clean all merged & unmerged branches. Use only when you know what are you doing."
+    }]
+  }
+}

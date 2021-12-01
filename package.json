@@ -1,0 +1,67 @@
+{
+  "name": "@peterek/code-style",
+  "version": "0.0.0",
+  "description": "Eslint configurations based on project type",
+  "keywords": [
+    "code style",
+    "lerna",
+    "eslint",
+    "prettier",
+    "standard"
+  ],
+  "author": {
+    "name": "Jiri Peterek",
+    "email": "jiri.peterek@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:peterekjs/code-style.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/peterekjs/code-style/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --parallel",
+    "bump": "lerna version --conventional-commits",
+    "bump:custom": "lerna version",
+    "commit": "git-cz",
+    "dev": "lerna run dev --parallel",
+    "link": "lerna link",
+    "lint": "echo \"lint\"",
+    "pkg:update": "lerna exec --parallel -- npm update && lerna link && git commit -am 'chore: update packages'",
+    "postinstall": "husky install && lerna bootstrap",
+    "postpublish": "lerna bootstrap",
+    "release": "lerna publish from-package",
+    "test": "lerna run test --parallel",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/cz-commitlint": "^15.0.0",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.0",
+    "prettier-config-standard": "^4.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
